@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class ThymeController {
 
-	@RequestMapping("/hello/{name}")
+	@RequestMapping("/thymeExample/{name}")
 	public String hiThere(Map model, @PathVariable String name) {
 		System.out.println("Start : ThymeController.hiThere(...)");
 		model.put("name", name);
