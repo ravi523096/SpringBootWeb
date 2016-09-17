@@ -1,4 +1,4 @@
-package com.ravikalla;
+package com.ravikalla.controller;
 
 import java.util.HashSet;
 import java.util.Map;
@@ -10,8 +10,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.ravikalla.domain.Player;
-import com.ravikalla.domain.Team;
+import com.ravikalla.entity.Player;
+import com.ravikalla.entity.Team;
 
 @Controller
 public class CricketController {
@@ -27,6 +27,8 @@ public class CricketController {
 		team = new Team("Mumbai", "MumbaiIndians", players);
 	}
 
+//	http://localhost:8082/SpringBootWeb/restExample.xml
+//	http://localhost:8082/SpringBootWeb/restExample.json
 	@RequestMapping("/restExample")
 	public @ResponseBody Team restExample(Map model) {
 		System.out.println("Start : CricketController.restExample(...)");

@@ -1,4 +1,4 @@
-package com.ravikalla;
+package com.ravikalla.controller;
 
 import java.util.Map;
 

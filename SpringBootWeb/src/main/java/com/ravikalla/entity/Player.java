@@ -1,6 +1,13 @@
-package com.ravikalla.domain;
+package com.ravikalla.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class Player {
+	@Id @GeneratedValue
+	Long id;
 	String name;
 	String position;
 	public Player() {
@@ -22,5 +29,11 @@ public class Player {
 	}
 	public void setPosition(String position) {
 		this.position = position;
+	}
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
 	}
 }
