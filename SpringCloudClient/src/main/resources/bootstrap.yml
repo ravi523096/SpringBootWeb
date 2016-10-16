@@ -1,0 +1,27 @@
+---
+# http://localhost:8001/SpringCloud-client/southamerica/
+spring:
+  application:
+    name: SpringCloud-client
+  cloud:
+    config:
+      uri: http://localhost:8001
+  profiles:
+    active: southamerica
+# Instead of above entry, run the application with -Dspring.profiles.active=southamerica
+server:
+  port: 8002
+
+#---
+## http://localhost:8001/SpringCloud-client/northamerica/
+#spring:
+#  application:
+#    name: SpringCloud-client
+#  cloud:
+#    config:
+#      uri: http://localhost:8001
+#  profiles:
+#    active: northamerica
+## Instead of above entry, run the application with -Dspring.profiles.active=northamerica
+#server:
+#  port: 8002
